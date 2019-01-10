@@ -1,6 +1,5 @@
-package com.example.sweater.domain;
+package com.example.zebo.domain;
 
-import com.sun.javafx.beans.IDProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
