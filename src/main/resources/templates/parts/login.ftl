@@ -15,7 +15,7 @@
         <input type="hidden" name = "_csrf" value="${_csrf.token }"/>
         <#if !isRegisterForm><a href="/registration">Not registered yet?</a></#if>
         <button class="btn btn-primary" type="submit"><#if isRegisterForm>Sign up<#else>Sign in</#if></button>
-    <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+    <!--input type="date" class="form-control" id="date" name="date" placeholder="Дата" required-->
     </form>
 </#macro>
 
