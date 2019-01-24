@@ -18,7 +18,7 @@ public class RegistrationController {
 
     @GetMapping("/registration")
     public String registration () {
-        return "registration";   //turns bach the View
+        return "registration";   //turns back the View
     }
 
     @PostMapping("/registration")

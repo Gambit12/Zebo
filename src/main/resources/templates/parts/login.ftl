@@ -12,6 +12,10 @@
                 <input type="password" name="password" class="form-control" placeholder="password"/>
             </div>
         </div>
+
+
+
+
         <input type="hidden" name = "_csrf" value="${_csrf.token }"/>
         <#if !isRegisterForm><a href="/registration">Not registered yet?</a></#if>
         <button class="btn btn-primary" type="submit"><#if isRegisterForm>Sign up<#else>Sign in</#if></button>
