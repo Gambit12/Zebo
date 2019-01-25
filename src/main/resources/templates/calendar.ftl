@@ -23,6 +23,7 @@
                 center: 'addEventButton',
                 right: 'month,agendaWeek,agendaDay,listMonth'
             },
+            fixedWeekCount: false,
             weekNumbers: true,
             eventLimit: true, // allow "more" link when too many events
             selectable: true,

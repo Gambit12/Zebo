@@ -9,9 +9,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+            <#if !isDoctor>
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/doctors">Doctors</a>
             </li>
+            </#if>
             <li class="nav-item">
                 <a class="nav-link" href="/main">Book a visit</a>
             </li>
