@@ -1,5 +1,5 @@
-<#macro login path isRegisterForm>
-    <form action="${path}" method="post">
+<#macro login> <!--login path isRegisterForm-->
+    <form action="/login" method="post">
         <div class="form-group row">
             <label class="col-sm-2 col-form-label"> User Name : </label>
             <div class="col-sm-6">
@@ -12,13 +12,18 @@
                 <input type="password" name="password" class="form-control" placeholder="password"/>
             </div>
         </div>
-
+        <!--div class="form-group row">
+            <label class="col-sm-2 col-form-label"> Phone:</label>
+            <div class="col-sm-6">
+                <input type="text" name="phone_number" class="form-control" placeholder="phone"/>
+            </div>
+        </div-->
 
 
 
         <input type="hidden" name = "_csrf" value="${_csrf.token }"/>
-        <#if !isRegisterForm><a href="/registration">Not registered yet?</a></#if>
-        <button class="btn btn-primary" type="submit"><#if isRegisterForm>Sign up<#else>Sign in</#if></button>
+        <a href="/registration">Not registered yet?</a>
+        <button class="btn btn-primary" type="submit">Sign in</button>
     <!--input type="date" class="form-control" id="date" name="date" placeholder="Дата" required-->
     </form>
 </#macro>
@@ -26,7 +31,7 @@
 <#macro logout>
     <form action="/logout" method="post">
         <input type="hidden" name = "_csrf" value="${_csrf.token }"/>
-    <button class="btn btn-primary" type="submit">Sign Out</button>
+    <button class="btn btn-primary" type="submit">Sign In/Out</button>
     </form>
 
 </#macro>

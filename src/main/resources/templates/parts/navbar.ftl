@@ -9,14 +9,25 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Calendar</a>
+                </li>
+
             <#if !isDoctor>
             <li class="nav-item">
-                <a class="nav-link" href="/doctors">Doctors</a>
+                <a class="nav-link" href="/doctors">Book a visit</a>
             </li>
             </#if>
+            <#if isUser && !isDoctor && !isAdmin>
             <li class="nav-item">
-                <a class="nav-link" href="/main">Book a visit</a>
+                <a class="nav-link" href="/main">My reservations</a>
             </li>
+            </#if>
+            <#if isDoctor>
+                <li class="nav-item">
+                    <a class="nav-link" href="/main">My patients</a>
+                </li>
+            </#if>
             <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/user/">User List</a>

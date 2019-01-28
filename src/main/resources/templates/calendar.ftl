@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css"-->
 
+    <style type="text/css">
+        body{
+            background-image: url(https://images.pexels.com/photos/1061581/pexels-photo-1061581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            background-repeat: no-repeat;
+            background-size: cover;
 
+        }
+    </style>
 
 <div id="calendar"></div>
 

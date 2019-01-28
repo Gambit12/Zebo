@@ -14,8 +14,36 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
+    private String name; //name
+    private String surname; //surname
     private String password;
     private String phone_number; //phone number
+    private String email; //email
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     private boolean active;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -29,6 +57,10 @@ public class User implements UserDetails {
 
     public boolean isDoctor() {
         return roles.contains(Role.DOCTOR);
+    }
+
+    public boolean isUser() {
+        return roles.contains(Role.USER);
     }
 
     public String getPhone_number() {
@@ -103,4 +135,5 @@ public class User implements UserDetails {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
 }

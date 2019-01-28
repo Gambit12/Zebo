@@ -7,6 +7,7 @@
         name = user.getUsername()
         isAdmin = user.isAdmin()
         isDoctor = user.isDoctor()
+        isUser = user.isUser()
     >
 
 <#else>
@@ -14,5 +15,6 @@
         name = "guest"
         isAdmin = false
         isDoctor = false
+        isUser = false
     >
 </#if>
