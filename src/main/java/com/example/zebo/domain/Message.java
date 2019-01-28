@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Message {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String text;
@@ -13,7 +13,7 @@ public class Message {
     private String filename;
 
     //
-    private String time;
+
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name ="user_id")
@@ -30,12 +30,6 @@ public class Message {
         this.author = user;
     }
 
-    public Message(String text, String tag, User user, String time) {
-        this.text = text;
-        this.tag = tag;
-        this.author = user;
-        this.time = time;
-    }
 
     public String getAuthorName() {
         return author != null ? author.getUsername() : "<none>";
@@ -73,14 +67,14 @@ public class Message {
         this.tag = tag;
     }
 
-    //
-    public String getTime() {
-        return time;
-    }
-    //
-    public void setTime(String time) {
-        this.time = time;
-    }
+//    //
+//    public String getTime() {
+//        return time;
+//    }
+//    //
+//    public void setTime(String time) {
+//        this.time = time;
+//    }
 
     public String getFilename() {
         return filename;
