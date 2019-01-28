@@ -19,6 +19,15 @@ public class User implements UserDetails {
     private String password;
     private String phone_number; //phone number
     private String email; //email
+    private String activationCode;
+
+    public String getActivationCode() {
+        return activationCode;
+    }
+
+    public void setActivationCode(String activationCode) {
+        this.activationCode = activationCode;
+    }
 
     public String getName() {
         return name;

@@ -12,12 +12,7 @@
                 <input type="password" name="password" class="form-control" placeholder="password"/>
             </div>
         </div>
-        <!--div class="form-group row">
-            <label class="col-sm-2 col-form-label"> Phone:</label>
-            <div class="col-sm-6">
-                <input type="text" name="phone_number" class="form-control" placeholder="phone"/>
-            </div>
-        </div-->
+
 
 
 
