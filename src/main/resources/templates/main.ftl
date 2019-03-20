@@ -4,7 +4,7 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <form method="get" action="/main" class="form-inline">
-                <input type="text" name="filter" class="form-control" value="${filter?ifExists}" placeholder="Search by tag">
+                <input type="text" name="filter" class="form-control" value="${filter?ifExists}" placeholder="Search by tag" />
                 <button type="submit" class="btn btn-primary ml-2">Найти</button>
             </form>
         </div>
@@ -20,7 +20,7 @@
                     <input type="text" class="form-control" name="text" placeholder="Enter Doctor's name"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="tag" placeholder="Enter time">
+                    <input type="text" class="form-control" name="tag" placeholder="Enter time" />
                 </div>
 
                 <#--<div class="form-group">-->
@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                 <div class="custom-file">
-                    <input type = "file" name="file" id = "customFile">
+                    <input type = "file" name="file" id = "customFile" />
                     <label class = "custom-file-label" for = "customFile">Add document</label>
                 </div>
                 </div>
@@ -74,7 +74,7 @@
         <div class="card my-3" >
 
         <#if message.filename??>
-            <img src="/img/${message.filename}" class="card-img-top">
+            <img src="/img/${message.filename}" class="card-img-top" />
         </#if>
         <div class="m-2">
         <span>${message.text}</span>

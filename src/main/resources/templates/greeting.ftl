@@ -52,6 +52,6 @@
     </script>
 
     <div>
-        <img src="http://www.dentalbite.com/blog/wp-content/uploads/2015/06/preguntas-dentista.jpg" class="img-fluid" alt="Dent_login">
+        <img src="http://www.dentalbite.com/blog/wp-content/uploads/2015/06/preguntas-dentista.jpg" class="img-fluid" alt="Dent_login" />
     </div>
 </@c.page>
